@@ -51,9 +51,70 @@ function newFunction() {
 //else 
 //    document.write("x < y");   
 
-var result = 5;
-switch(result) {
-    
-}   
+//var stroka = "word12";
 
+//switch(stroka) {
+//    case "4": 
+//        console.log("number 4");
+//        break;
+//    case "45": 
+//        console.log("number 45");
+//        break;
+//    case "word": 
+//        console.log("word");
+//        break;   
+//    default: 
+//        console.log("default");     
+// }
+
+                     //Arrays , massivi dannih
+
+//var arr = new Array(43,43,54,65)  or 
+//var arr =  [5, true, "stroka", 5.7, -100];
+//arr = [34,43,43,43];  
+//arr[3] = "word";               
+//console.log(arr.length);
+//var matrix = [[4, 5, 6], [7, 8, 9], [1, 2, 3], ];
+
+//matrix[1] [1] = 90;
+//console.log(matrix);
             
+                //Loops, cikli
+
+//for(i = 100; i > 5; i /= 2/*Kazdij raz delim na 2  */ ) {
+//    console.log(i);
+//}        
+
+
+/* var j = 1000;
+while(j >= 100) {
+    j -= 100;
+    console.log(j);
+}
+
+var isHasCar = true;
+while(isHasCar) {
+    
+} */
+
+/*var i = 0;
+do {
+  i++;
+    console.log(i);
+} while(i < 10); */
+
+/* for(i = 10; i <+ 20;i += 2) {
+    //if(i > 15)
+      //  break;
+    if(i % 2 == 0)
+        continue; //pozvoliajet propusti tu cast, kogda ostatok raven 0, toest vidast tolko neciotnie cisla  
+    console.log(i);
+} */
+
+/*var arr = ["r", "o", "m", "a", "n"];
+
+for(i = 0; i < arr.length; i++) {
+    arr[i] += "+1"
+    console.log("element" + (i + 1) + ":" + arr[i]);
+}*/
+                    //
