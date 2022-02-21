@@ -1,9 +1,9 @@
 //document.write("<br>Hello world");
-newFunction();
+//newFunction();
 
-function newFunction() {
-    document.write("<br>Hello world<br>");
-}
+//function newFunction() {
+//    document.write("<br>Hello world<br>");
+//}
 
             //peremennije
 //var number = 21; //Переменная может быть чем угодно (цифра, строка, условие)
@@ -117,4 +117,140 @@ for(i = 0; i < arr.length; i++) {
     arr[i] += "+1"
     console.log("element" + (i + 1) + ":" + arr[i]);
 }*/
-                    //
+                    //Alert, Promt, Confirm
+
+/*alert("Roman is a programer"); //Vsplivajushee okno
+
+var data = confirm("Are you ready?"); //
+console.log(data);
+if(data) {
+    alert("Good, then let's proceed!");
+} else {
+    alert("Ohh alright then, maybe next time...");
+    newFunction = "Shame on you!!!";
+}*/
+
+/*var data1 = prompt("How old are you?", "Enter you're age here pleace...");
+console.log(data1);
+var var1 = null;*/
+
+/*var person = null;
+var age = null;
+if(confirm("Are you sure?")) {
+    person = prompt("Enter your name");
+    
+    age = prompt("Enter your age");
+    alert("Hello " + person);
+} else {
+    alert("See you next time... Bye!");
+}*/
+
+
+                                //Funkcii JS
+
+/*function info(word) {                       //V kruglih skobkah parametri
+    console.log(word + "!");
+    console.log("Hello");
+} /*
+info("Hello Roman, you're strarted your funcktion lesson", );        //vizivajem funkciju
+
+function summ(a ,b) {     //Slozenije dvuh peremennih
+    var res = a + b;
+    console.log(res); 
+    info(res);            //Vizivaem funkciju v funkcii
+ 
+}
+summ(5, 7); */
+
+/*function summa(arr) {      //Funkcija skladivaet vse cisla massiva 
+    var sum = 0;
+
+    for(var i = 0; i < arr.length; i++) 
+        sum += arr[i];
+    return sum;   //Vozvrashajem rezultat 
+}    
+
+var array = [10, 20, 30];
+var array_2 = [30, 30, 30, 30];
+var array_3 = [1, 2, 3, 4, 5];
+
+var res = summa(array);
+var res1 = summa(array_2);
+var res2 = summa(array_3);
+console.log("Result: " + res + ", " + res2 + " ," + res1); */
+
+                        //Lokalnije i Globalnije peremennije
+
+/*var num = 10; // Globalnaja peremennaja
+
+function info() {
+    
+    var num = 20; //lokalnaja peremennaja, rabotaet tolko v predelah funkcii
+    console.log(num);
+}
+
+info();
+console.log(num);*/
+
+                            //Sobitija i obrabotcik sobitij
+/*var counter = 0;
+function onClickButton(el) {
+    counter++;
+    el.innerHTML = "You pushed the button " + counter + " time(s)";//dobavliajem stili
+    el.style.cssText = "border-radius: 6px; border: solid; font-size: 20px";
+    el.style.background = "black";
+    el.style.color = "white"; 
+    console.log(el.name)
+}
+
+function onInput(el) {
+    if(el.value == "1984")
+        alert("Password accepted")
+    console.log(el.value);
+} */
+
+                                //Formi 
+
+/* let text = document.getElementById('text');
+text.title = "old text";
+console.log(text.title);
+console.log(text.id);
+text.style.color = "red";
+text.style.backgroundColor = "pink";
+text.innerHTML = "Roman <br> Repic";
+document.getElementById('text').style.textAlign = "center"; 
+
+// spans = document.getElementsByTagName('span');
+var spans = document.getElementsByClassName('simple-text');
+
+for(i = 0; i < spans.length; i++) {
+    console.log(spans[i].innerHTML);
+} */
+
+function checkForm(el) {
+    var name = document.getElementById('name').value;
+    var pass = document.getElementById('pass').value;
+    var repass = document.getElementById('repass').value;
+    let state = document.getElementsByName('state').value;
+    
+    var fail = "";
+    if(name == "" || pass == "" || state == "") 
+        fail = "Fill all the tables";
+    else if(name.lenght <= 1 || name.lenght > 50)
+        fail = "Enter the correct name";
+    else if(pass != repass)
+        fail = "Paassword doesn't match";
+    else if(pass.split("&").lenght > 1)
+        fail = "Password is not correct"    
+    
+    if(fail != "") {
+        document.getElementById('error').innerHTML = fail;
+        return false;
+    } else {
+        alert("Form was filled correctly");
+        document.getElementById('error').innerHTML = "";
+        return true;
+    } 
+    
+}
+
