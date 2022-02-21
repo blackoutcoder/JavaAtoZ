@@ -227,7 +227,11 @@ for(i = 0; i < spans.length; i++) {
     console.log(spans[i].innerHTML);
 } */
 
-function checkForm(el) {
+/* document.getElementById('button').addEventListener("click", checkForm);
+function checkForm(event) {
+    event.preventDefault();
+    var el = document.getElementById('main-form');
+
     var name = document.getElementById('name').value;
     var pass = document.getElementById('pass').value;
     var repass = document.getElementById('repass').value;
@@ -245,12 +249,49 @@ function checkForm(el) {
     
     if(fail != "") {
         document.getElementById('error').innerHTML = fail;
-        return false;
+    
     } else {
         alert("Form was filled correctly");
         document.getElementById('error').innerHTML = "";
-        return true;
+        
     } 
     
 }
+ */
 
+                            //Taimeri i intervali 
+
+/* var id = setInterval(my_func, 1000);// prostoj sciotcik do 10
+
+var counter = 0;
+function my_func() {
+    counter++;
+    console.clear();
+    console.log("Counter: " + counter);
+    if(counter == 10) {
+        clearInterval(id);
+        console.log("Counter stopped!");
+    }   
+}  */
+
+/* var counter = 0;
+setInterval(function() {
+    counter++;
+    console.clear();
+    console.log("Seconds passed: " + counter);
+}, 1000); */
+
+
+/* setTimeout(function() {
+    console.log("Timer is working");
+}, 2000);
+ */
+
+/* setTimeout(my_funk, 2000);
+function my_funk() {
+    console.log("Timer is working!");
+}
+ */
+
+
+                        // 
